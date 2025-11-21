@@ -1,0 +1,100 @@
+ 
+
+<html>
+
+  <head>
+
+    <title>Add New Item</title>
+
+  </head>
+
+  <body>
+
+    <form action="">
+
+      <fieldset>
+
+        <legend>General Info</legend>
+
+        <p>
+
+          <label for="itemName">Item Name</label>
+
+         
+         <input type="text" id="itemName" name="f" size="50" maxlength="500" />
+         </p>
+         <p>
+         <label for="itemDescription">Item Description:</label><br/>
+         <textarea id="itemDescription" name="itemDescription" rows="4" cols="50"></textarea>
+
+        </p>
+        <br/>
+        <label for="upload">Cover image</label>
+        <input type="file" id = "upload" name ="upload"/>
+        <br/>
+        <label for= "Category">Category</label>
+        <select id="Category" name="Category"> 
+
+        <option value="notSpecified"Selected>Not Specified  </option> 
+
+        <option value="consumtion" >Consumption</option> 
+
+        <option value="household">household</option> 
+        <option value="electronic">electronic</option> 
+
+        <option value="gadget">gadget</option> 
+
+</select> 
+      </fieldset>
+
+      <fieldset>
+
+        <legend>Misc.</legend>
+        <p>
+         <label for="inventoryamount">Inventory Amount</label>
+
+         
+         <input type="text" id="inventoryamount" name="f" size="20" maxlength="500" />
+
+        </p>
+        <p>
+         <label for="listprice">List Price</label>
+
+         
+         <input type="text" id="listprice" name="f" size="20" maxlength="500" />
+
+        </p>
+        <p>
+        <label>Available Stores:</label><br/>
+        <input type="checkbox" id="bangkok" name="availableStore[]" value="Bangkok" />
+        <label for="bangkok">Bangkok</label>
+        <input type="checkbox" id="pattaya" name="availableStore[]" value="Pattaya" />
+        <label for="pattaya">Pattaya</label>
+        <input type="checkbox" id="phuket" name="availableStore[]" value="Phuket"/>
+        <label for="phuket">Phuket</label>
+        </p>
+        <p>
+        <label>Status:</label><br/>
+        <input type="radio" id="active" name="status" value="Active" />
+        <label for="active">Active</label>
+        <input type="radio" id="inactive" name="status" value="Inactive"/>
+        <label for="inactive">Inactive</label>
+        </p>
+
+      </fieldset>
+
+      <fieldset>
+     <legend>Staff Info</legend>
+     <p>
+     <label for="staffEmail">Staff Email:</label>
+     <input type="email" id="staffEmail" name="staffEmail" value="u6722003@au.edu"/>
+     </p>
+     </fieldset>
+
+      <button type="submit">Submit Form</button>
+
+    </form>
+
+  </body>
+
+</html>
